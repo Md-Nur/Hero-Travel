@@ -336,8 +336,9 @@ main {
 
 .newsletter {
   display: flex;
-  margin: 100px;
+  margin-top: 100px;
   gap: 25px;
+  justify-content: space-between;
 }
 .newsletterForm {
   width: 434px;
@@ -394,6 +395,75 @@ main {
   flex-shrink: 0;
   border-radius: 8px;
   background: #ff5400;
+}
+
+.newsletterImg > img {
+  width: 672px;
+  height: 422px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
+}
+
+/* footer  */
+
+footer {
+  width: 100%;
+  height: 502px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(19, 19, 24, 0.05);
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footerDiv > h3 {
+  color: var(--Dark-01, #131318);
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.footerDiv > h3 > span {
+  color: #ff5400;
+  font-family: Mulish;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.footerDiv > p {
+  color: #5a5a5d;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.line {
+  width: 872px;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.1);
+}
+
+.copyRight {
+  color: #131318;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 @media screen and (max-width: 600px) {

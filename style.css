@@ -519,6 +519,9 @@ footer {
   #place7 {
     width: 100%;
   }
+  .wcuCard > p {
+    width: auto;
+  }
 
   .wcuCard > h3 {
     font-size: 20px;

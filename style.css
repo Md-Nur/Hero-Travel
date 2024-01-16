@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Dark-02: #424247;
+}
+
+nav,
+.navLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  margin: 50px 125px;
+}
+
+.navLogo {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.navLogo > img {
+  margin: 15px;
+}
+.navLogo > p > span {
+  color: #ff5400;
+}
+#navLinks {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  list-style: none;
+  color: var(--Dark-02, #424247);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#navHome {
+  color: #ff5400;
+}
+.hamburger {
+  display: none;
+}
+
+main {
+  margin: 60px 135px;
+}
+
+/* hero section  */
+.hero {
+  border-radius: 16px;
+  height: 500px;
+  background-image: url("/Bg/Rectangle\ 2.png"),
+    url("Images/Group\ 13\ \(1\)\ \(1\).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.hero > h1 {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.hero > p {
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.heroBtns {
+  display: inline-flex;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.heroinput {
+  width: 142px;
+  height: 20px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 16px;
+  color: rgba(19, 19, 24, 0.5);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-style: none;
+}
+
+.arrowbtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchbtn {
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Popular place to visit  */
+.popularTour {
+  height: 550px;
+  display: flex;
+  margin: 100px auto;
+  justify-content: space-between;
+  gap: 50px;
+}
+.popularToursText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popularToursText > h2 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.popularToursText > p,
+.popularToursText > li {
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.popularToursText > button {
+  width: 174px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ff5400;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  border-style: none;
+}
+.popularTourImg {
+  width: 540px;
+}
+
+/* choose your destination  */
+.dest > h2 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.dest > p {
+  width: 643px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 25px auto;
+}
+.destGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.destPlace {
+  width: 573px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(19, 19, 24, 0.2) 0%,
+      rgba(19, 19, 24, 0.2) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#place1 {
+  background-image: url("/Images/Rectangle\ 5.png");
+}
+#place2 {
+  background-image: url("/Images/Rectangle\ 8.png");
+}
+#place3 {
+  background-image: url("/Images/Rectangle\ 6.png");
+  width: 374px;
+}
+#place4 {
+  background-image: url("/Images/Rectangle\ 7.png");
+  width: 474px;
+}
+#place5 {
+  background-image: url("/Images/Rectangle\ 9.png");
+  width: 274px;
+}
+#place6 {
+  width: 473px;
+  background-image: url("/Images/Rectangle\ 11.png");
+}
+#place7 {
+  width: 673px;
+  background-image: url("/Images/Rectangle\ 10.png");
+}
+
+/* WCU section  */
+
+.wcu > h2 {
+  color: #131318;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 100px;
+}
+
+.wcu > p {
+  width: 643px;
+  color: rgba(19, 19, 24, 0.7);
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin: 50px auto;
+}
+
+.wcuContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.wcuCard {
+  width: 509px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
+  padding: 32px;
+}
+
+#middleCard {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.wcuCard > h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 32px;
+}
+.wcuCard > p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-top: 16px;
+}
+
+/* Newsletter  */
+
+.newsletter {
+  display: flex;
+  margin: 100px;
+  gap: 25px;
+}
+.newsletterForm {
+  width: 434px;
+  height: 382px;
+  flex-shrink: 0;
+  padding: 40px;
+}
+.newsletterForm > h4 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.newsletterForm > p {
+  color: #5a5a5d;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+
+.newsletterForm > form {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.newsletterForm > form > input {
+  width: 361px;
+  height: 20px;
+  padding: 16px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  border-style: none;
+}
+.finput {
+  color: rgba(19, 19, 24, 0.3);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#fbtn {
+  width: 393px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #ff5400;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    margin: 20px;
+  }
+  .navLogo {
+    font-size: 21.543px;
+  }
+
+  .navLogo > img {
+    margin: 10px;
+  }
+  #navLinks {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  main {
+    margin: 20px;
+  }
+  .hero {
+    padding: 16px;
+  }
+  .hero > h1 {
+    font-size: 22px;
+  }
+  .heroBtns {
+    flex-direction: column;
+  }
+  .heroinput {
+    width: 223px;
+  }
+  .popularTour {
+    flex-direction: column;
+    height: auto;
+  }
+  .popularToursText > h2 {
+    font-size: 20px;
+  }
+  .dest > h2 {
+    font-size: 20px;
+  }
+  .dest > p {
+    width: 95%;
+  }
+  .destPlace,
+  #place3,
+  #place4,
+  #place5,
+  #place6,
+  #place7 {
+    width: 100%;
+  }
+
+  .wcuCard > h3 {
+    font-size: 20px;
+  }
+
+  .newsletter {
+    flex-direction: column;
+  }
+}
